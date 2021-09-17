@@ -43,32 +43,32 @@ function App() {
       <label>Name:</label>
       <input type="text" onChange={(event) => {setName(event.target.value)}}/>
 
-      <label>Age:</label>
+      <label>Precio:</label>
       <input type="number" onChange={(event) => {setAge(event.target.value)}}/>
 
-      <label>Country:</label>
+      <label>Pastel:</label>
       <input type="text" onChange={(event) => {setCountry(event.target.value)}}/>
 
-      <label>Position:</label>
+      <label>Relleno:</label>
       <input type="text" onChange={(event) => {setPosition(event.target.value)}}/>
 
-      <label>Salary:</label>
+      <label>Hora:</label>
       <input type="number" onChange={(event) => {setSalary(event.target.value)}}/>
 
-      <button onClick={addEmployee}>Add employee</button>
+      <button onClick={addEmployee}>Agregar orden</button>
       
 
       </div>
       <div className="employees">
-        <button onClick={getEmployees}>Show Employees</button>
+        <button onClick={getEmployees}>Mostrar Órdenes</button>
 
         {employeeList.map((val, key) => {
           return <div className="employee"> 
                   <h3>Name: {val.name} </h3>
-                  <h3>Age: {val.age} </h3>
-                  <h3>Country: {val.country} </h3>
-                  <h3>Position: {val.position} </h3>
-                  <h3>Salary: {val.salary} </h3>
+                  <h3>Precio: {val.age} </h3>
+                  <h3>Pastel: {val.country} </h3>
+                  <h3>Relleno: {val.position} </h3>
+                  <h3>Hora: {val.salary} </h3>
                 </div>
         })}
       </div>

@@ -1,0 +1,14 @@
+{
+    "contacts":[
+        {
+            "id":"1001",
+            "name":"Angel Torres",
+            "email":"at@angel.torres.com"
+        },
+        {
+            "id":"1002",
+            "name":"Antonio Calix",
+            "email":"antonio.calix@a.com"
+        }
+    ]
+} 
